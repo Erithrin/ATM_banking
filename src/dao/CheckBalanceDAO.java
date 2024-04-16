@@ -1,6 +1,8 @@
 package dao;
 
+import java.math.BigDecimal;
+
 public interface CheckBalanceDAO {
 
-    public float getBalance();
+    BigDecimal getBalance();
 }

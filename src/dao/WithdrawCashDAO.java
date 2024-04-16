@@ -1,7 +1,9 @@
 package dao;
 
+import java.math.BigDecimal;
+
 public interface WithdrawCashDAO {
 
 
-    public void UpdateBalanceForWithdrawal(float amountToWithdraw) ;
+    void UpdateBalanceForWithdrawal(BigDecimal amountToWithdraw) ;
 }

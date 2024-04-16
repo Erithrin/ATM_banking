@@ -2,6 +2,7 @@ package dao;
 
 import DBUtility.DBUtil;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -10,14 +11,14 @@ public class WithdrawCashDAOImpl implements WithdrawCashDAO {
 
 
     @Override
-    public void UpdateBalanceForWithdrawal(float newBalance) {
+    public void UpdateBalanceForWithdrawal(BigDecimal newBalance) {
 
         try (Connection conn = DBUtil.provideConnection()) {
 
 
             PreparedStatement ps = conn.prepareStatement("update bank_balance set balance = ?");
 
-            ps.setFloat(1, newBalance);
+            ps.setBigDecimal(1, newBalance);
 
             ps.executeUpdate();
 

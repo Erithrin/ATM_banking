@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e20b204-1452-4176-a94e-4c190f2a648c" name="Default Changelist" comment="" />
+    <list default="true" id="6e20b204-1452-4176-a94e-4c190f2a648c" name="Default Changelist" comment="updated data type from float to Bigdecimal for precision">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/CheckBalanceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/CheckBalanceAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/DepositAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/DepositAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/WithdrawalAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/WithdrawalAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start/UserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start/UserActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CheckBalanceDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CheckBalanceDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CheckBalanceDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CheckBalanceDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DepositMoneyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DepositMoneyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DepositMoneyDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DepositMoneyDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/WithdrawCashDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/WithdrawCashDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/WithdrawCashDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/WithdrawCashDAOImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2ev6VB0nvG13bmaPiX0NjOc903L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +44,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,27 +100,46 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated data type from float to Bigdecimal for precision" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated data type from float to Bigdecimal for precision" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1712947363909">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1712947363909" />
-    <state width="1478" height="383" key="GridCell.Tab.0.bottom" timestamp="1713206396006">
+    <state x="415" y="4" key="CommitChangelistDialog2" timestamp="1713292461034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="383" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1713206396006" />
-    <state width="1478" height="383" key="GridCell.Tab.0.center" timestamp="1713206396006">
+    <state x="415" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1713292461034" />
+    <state width="1478" height="383" key="GridCell.Tab.0.bottom" timestamp="1713292364138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="383" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1713206396006" />
-    <state width="1478" height="383" key="GridCell.Tab.0.left" timestamp="1713206396006">
+    <state width="1478" height="383" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1713292364138" />
+    <state width="1478" height="383" key="GridCell.Tab.0.center" timestamp="1713292364138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="383" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1713206396006" />
-    <state width="1478" height="383" key="GridCell.Tab.0.right" timestamp="1713206396006">
+    <state width="1478" height="383" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1713292364138" />
+    <state width="1478" height="383" key="GridCell.Tab.0.left" timestamp="1713292364138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="383" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1713206396006" />
+    <state width="1478" height="383" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1713292364138" />
+    <state width="1478" height="383" key="GridCell.Tab.0.right" timestamp="1713292364138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="383" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1713292364138" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1712946065250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -119,6 +156,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1713203834082" />
+    <state x="511" y="42" key="refactoring.ChangeSignatureDialog" timestamp="1713292171944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="42" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1713292171944" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1712858096412">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

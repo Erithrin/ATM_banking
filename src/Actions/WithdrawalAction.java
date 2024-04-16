@@ -3,6 +3,7 @@ package Actions;
 import dao.CheckBalanceDAOImpl;
 import dao.WithdrawCashDAOImpl;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class WithdrawalAction {
@@ -11,23 +12,22 @@ public class WithdrawalAction {
         System.out.print("Enter the amount you want to withdraw   :   ");
         Scanner scan = new Scanner(System.in);
 
-        float amountToWithdraw = scan.nextFloat();
+        BigDecimal amountToWithdraw = scan.nextBigDecimal();
 
         withdrawMoney(amountToWithdraw);
     }
 
-    private static void withdrawMoney(float amountToWithdraw) {
+    private static void withdrawMoney(BigDecimal amountToWithdraw) {
 
         CheckBalanceDAOImpl checkBalance = new CheckBalanceDAOImpl();
-        float balance = checkBalance.getBalance();
-        if (Float.compare(balance, amountToWithdraw) >= 0) {
+        BigDecimal balance = checkBalance.getBalance();
+        if (balance.compareTo(amountToWithdraw) >= 0) {
             WithdrawCashDAOImpl withdrawCashDAOImplObj = new WithdrawCashDAOImpl();
-            System.out.println("update floating point numbers to Bigdecimal for precision in entire project");
 
             //update floating point numbers to Bigdecimal for precision in entire project
 
 
-            withdrawCashDAOImplObj.UpdateBalanceForWithdrawal(balance - amountToWithdraw);
+            withdrawCashDAOImplObj.UpdateBalanceForWithdrawal(balance.subtract(amountToWithdraw));
 
 
             System.out.println("Your old balance was : " + balance +

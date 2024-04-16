@@ -3,6 +3,7 @@ package Actions;
 import dao.CheckBalanceDAOImpl;
 import dao.DepositMoneyDAOImpl;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class DepositAction {
@@ -12,17 +13,17 @@ public class DepositAction {
         System.out.println("How much $$ do you want to deposit?");
 
         Scanner scan = new Scanner(System.in);
-        float amountToBeDeposited = scan.nextFloat();
+        BigDecimal amountToBeDeposited = scan.nextBigDecimal();
         deposit(amountToBeDeposited);
 
 
 
     }
 
-    private static void deposit(float amountToBeDeposited) {
+    private static void deposit(BigDecimal amountToBeDeposited) {
 
         CheckBalanceDAOImpl checkBalance = new CheckBalanceDAOImpl();
-        float currentBalance = checkBalance.getBalance();
+        BigDecimal currentBalance = checkBalance.getBalance();
 
         DepositMoneyDAOImpl deposit = new DepositMoneyDAOImpl();
         deposit.depositCash(amountToBeDeposited, currentBalance);

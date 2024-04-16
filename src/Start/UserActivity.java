@@ -24,8 +24,8 @@ public class UserActivity {
             performAction(optionChosen);
 
         } catch (Exception e) {
-            //e.printStackTrace();
             System.out.println("OOPS! Something went wrong. Please try again with correct option");
+            chooseActions();
         }
 
 

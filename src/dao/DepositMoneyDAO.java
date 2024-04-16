@@ -1,7 +1,9 @@
 package dao;
 
+import java.math.BigDecimal;
+
 public interface DepositMoneyDAO {
 
 
-    public void depositCash(float amountToBeDeposited, float currentBalance) ;
+    void depositCash(BigDecimal amountToBeDeposited, BigDecimal currentBalance) ;
 }

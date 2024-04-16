@@ -2,6 +2,7 @@ package dao;
 
 import DBUtility.DBUtil;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -9,12 +10,12 @@ import java.sql.SQLException;
 public class DepositMoneyDAOImpl implements DepositMoneyDAO {
 
     @Override
-    public void depositCash(float amountToBeDeposited, float currentBalance) {
+    public void depositCash(BigDecimal amountToBeDeposited, BigDecimal currentBalance) {
 
 
         try (Connection conn = DBUtil.provideConnection()) {
             PreparedStatement ps = conn.prepareStatement("Update bank_balance set balance = ?");
-            ps.setFloat(1, Float.sum(amountToBeDeposited, currentBalance));
+            ps.setBigDecimal(1, amountToBeDeposited.add(currentBalance));
 
             ps.executeUpdate();
 

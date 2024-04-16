@@ -2,10 +2,12 @@ package Actions;
 
 import dao.CheckBalanceDAOImpl;
 
+import java.math.BigDecimal;
+
 public class CheckBalanceAction {
     public static void displayBalance() {
         CheckBalanceDAOImpl checkBal = new CheckBalanceDAOImpl();
-        float balance = checkBal.getBalance();
+        BigDecimal balance = checkBal.getBalance();
         System.out.println("My current balance is : " +balance);
     }
 }
